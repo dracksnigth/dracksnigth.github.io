@@ -1,71 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Este es un ejemplo de HTML5">
-  <meta name="keywords" content="HTML5, CSS3, JavaScript">
-  <title>Primer laboratorio de HTML5</title>
-  <link rel="stylesheet" href="https://dracksnigth.github.io/css/miestilo.css">
-  <link rel="stylesheet" href="iconweb/style.css">
- 
-</head>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item{padding:16px;font-weight:bold}
+</style>
 <body>
-<div id="envoltura">
-  <header id = "cabecera">
-    <h1>Este es el título principal del sitio web</h1>
-  </header>
-  <nav id = "menu">
-                <a href="inicio.html"><span class="icon-home azul"></span>Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="opcion.html">Opcion</a>
-                <a href="opcion.html">Opcion</a>
 
-            </nav>
-  <section id = "seccion">
-    <article>
-      <header>
-        <hgroup>
-          <h1><span class="icon-school azul zoom"></span>Título del primer mensaje</h1>
-          <h2>Subtítulo del primero mensaje</h2>
-        </hgroup>
-        <p>publicado 12-04-2017</p>
-      </header>
-      Este es el texto de mi primer mensaje
-
-      <figure>
-        <img src="img/unc.png" height="250px" width="140px" border="1px solid #999999">
-        <figcaption>
-           Esta es la imagen del escudo de la UNC
-         </figcaption>
-      </figure>
-      <p>
-      <i class="fa fa-html5 azul"></i>
-      </p>
-      <footer>
-        <p>comentarios (0)</p>
-      </footer>
-    </article>
-    <article>
-      <header>
-        <hgroup>
-          <h1>Título del segundo mensaje</h1>
-          <h2>Subtítulo del segundo mensaje</h2>
-        </hgroup>
-        <p>publicado 02-04-2017</p>
-      </header>
-      Este es el texto de mi segundo mensaje
-      <footer>
-        <p>comentarios (0)</p>
-      </footer>
-    </article>
-  </section>
-  <aside id = "lateral">
-    <blockquote>Cita sobre el artículo número uno</blockquote>
-    <blockquote>Cita sobre el artículo número dos</blockquote>
-  </aside>
-  <footer id = "pie">
-    Derechos Reservados &copy; 2017
-  </footer>
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card-2" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#"><img src="https://www.w3schools.com/images/w3schools.png" style="width:80%;"></a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button w3-light-grey" href="#">Home</a>
+  <a class="w3-bar-item w3-button" href="#">Typography</a>
+  <a class="w3-bar-item w3-button" href="#">Colors</a>
+  <a class="w3-bar-item w3-button" href="#">Utilities</a>
+  <a class="w3-bar-item w3-button" href="#">Containers</a>
+  <a class="w3-bar-item w3-button" href="#">Buttons</a>
+  <a class="w3-bar-item w3-button" href="#">Cards</a>
+  <a class="w3-bar-item w3-button" href="#">Alerts</a>
+  <div>
+    <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Accordions <i class="fa fa-caret-down"></i></a>
+    <div id="demo" class="w3-hide">
+      <a class="w3-bar-item w3-button" href="#">Link 1</a>
+      <a class="w3-bar-item w3-button" href="#">Link 2</a>
+      <a class="w3-bar-item w3-button" href="#">Link 3</a>
+    </div>
   </div>
+  <a class="w3-bar-item w3-button" href="#">Tables</a>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-top w3-theme w3-large">
+  <i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">W3.CSS: Introduction</span>
+</div>
+
+<header class="w3-container w3-theme w3-padding-64" style="padding-left:32px">
+  <h1 class="w3-xxxlarge w3-padding-16">W3.CSS</h1>
+</header>
+
+<div class="w3-container w3-padding-32" style="padding-left:32px">
+
+<h2>What is W3.CSS?</h2>
+
+<p>W3.CSS is a modern CSS framework with built-in responsiveness:</p>
+
+<ul class="w3-leftbar w3-theme-border" style="list-style:none">
+ <li>Smaller and faster than other CSS frameworks.</li>
+ <li>Easier to learn, and easier to use than other CSS frameworks.</li>
+ <li>Uses standard CSS only (No jQuery or JavaScript library).</li>
+ <li>Speeds up mobile HTML apps.</li>
+ <li>Provides CSS equality for all devices. PC, laptop, tablet, and mobile:</li>
+</ul>
+<br>
+<img src="img_responsive.png" style="width:100%;margin:20px 0" alt="Responsive">
+
+<hr>
+<h2>W3.CSS is Free</h2>
+<p>W3.CSS is free to use. No license is necessary.</p>
+
+<hr>
+<h2>Easy to Use</h2>
+<div class="w3-container w3-sand w3-leftbar">
+<p><i>Make it as simple as possible, but not simpler.</i><br>
+Albert Einstein</p>
+</div>
+
+<h2>W3.CSS Web Site Templates</h2>
+
+<p>We have created some responsive W3CSS templates for you to use.</p>
+<p>You are free to modify, save, share, use or do whatever you want with them:</p>
+
+<div class="w3-container w3-padding-16 w3-card-2" style="background-color:#eee">
+<h3 class="w3-center">Blog Template</h3>
+<div class="w3-content" style="max-width:800px">
+<img src="img_temp_blog.jpg" style="width:98%;margin:20px 0" alt="Blog Template"><br>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="tryw3css_templates_blog.htm" target="_blank" class="w3-button w3-dark-grey" style="width:98.5%">Demo</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="w3css_templates.asp" class="w3-button w3-dark-grey" style="width:98.5%">More Templates �</a>
+  </div>
+</div>
+</div>
+</div>
+<br>
+
+<h2 class="w3-section w3-text-teal">Colors</h2>
+<p>W3.CSS uses color classes.</p>
+<p>The color classes are inspired by colors used in marketing, road signs, and sticky notes.</p>
+<div class="w3-container w3-red"><p>w3-red</p></div><br>
+<div class="w3-container w3-pink"><p>w3-pink</p></div><br>
+<div class="w3-container w3-purple"><p>w3-purple</p></div><br>
+<div class="w3-container w3-deep-purple"><p>w3-deep-purple</p></div><br>
+<div class="w3-container w3-indigo"><p>w3-indigo</p></div><br>
+<div class="w3-container w3-blue"><p>w3-blue</p></div><br>
+<div class="w3-container w3-light-blue"><p>w3-light-blue</p></div><br>
+<div class="w3-container w3-cyan"><p>w3-cyan</p></div><br>
+<div class="w3-container w3-aqua"><p>w3-aqua</p></div><br>
+<div class="w3-container w3-teal"><p>w3-teal</p></div><br>
+<div class="w3-container w3-green"><p>w3-green</p></div><br>
+<div class="w3-container w3-light-green"><p>w3-light-green</p></div><br>
+<div class="w3-container w3-lime"><p>w3-lime</p></div><br>
+<div class="w3-container w3-sand"><p>w3-sand</p></div><br>
+<div class="w3-container w3-khaki"><p>w3-khaki</p></div><br>
+<div class="w3-container w3-yellow"><p>w3-yellow</p></div><br>
+<div class="w3-container w3-amber"><p>w3-amber</p></div><br>
+<div class="w3-container w3-orange"><p>w3-orange</p></div><br>
+<div class="w3-container w3-deep-orange"><p>w3-deep-orange</p></div><br>
+<div class="w3-container w3-blue-grey"><p>w3-blue-grey</p></div><br>
+<div class="w3-container w3-brown"><p>w3-brown</p></div><br>
+<div class="w3-container w3-light-grey"><p>w3-light-grey</p></div><br>
+<div class="w3-container w3-grey"><p>w3-grey</p></div><br>
+<div class="w3-container w3-dark-grey"><p>w3-dark-grey</p></div><br>
+<div class="w3-container w3-black"><p>w3-black</p></div><br>
+<div class="w3-container w3-pale-red"><p>w3-pale-red</p></div><br>
+<div class="w3-container w3-pale-yellow"><p>w3-pale-yellow</p></div><br>
+<div class="w3-container w3-pale-green"><p>w3-pale-green</p></div><br>
+<div class="w3-container w3-pale-blue"><p>w3-pale-blue</p></div>
+
+</div>
+
+<footer class="w3-container w3-theme w3-padding-32" style="padding-left:32px">
+  <h5>Footer</h5>
+  <p>Footer information goes here</p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+        document.getElementById("myIntro").classList.add("w3-show-inline-block");
+    } else {
+        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+    }
+}
+
+// Accordions
+function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme", "");
+    }
+}
+</script>
+     
 </body>
-</html>
+</html> 
