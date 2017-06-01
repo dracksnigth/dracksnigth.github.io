@@ -2,7 +2,7 @@
 *
 */
 function pageLodad(){
-	var ok = document.getElementById("ok");
+	var ok = document.getElementById("cambio");
 	ok.onclick = okayclick;
 }
 
