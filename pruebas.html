@@ -7,16 +7,23 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
+<div>
+<a id="fb-link" href="https://www.facebook.com">Facebook</a>
+</div>
 
+<div>
 <img id="ico1" src="img/4.jpg" alt="XD" width=800px heigth=900px/>
 <button onclick="changeImage();">Click me! </button>
-
+</div>
 <script>
 function changeImage(){
 	var imgxd = document.getElementById("ico1");
-	
 	imgxd.src = "img/2.jpg"
-}
+};
+
+var link = document.getElementById("fb-link");
+link.innerHTMl = "MySpace is back in a really buig way";
+
 </script>
 
 </body>
