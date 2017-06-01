@@ -2,7 +2,7 @@
 *
 */
 function pageLoad(){
-	var ok = document.getElementById("cambio");
+	var ok = document.getElementById("ok");
 	ok.onclick = okayclick;
 }
 
@@ -14,4 +14,5 @@ function okayclick(){
 
 var link = document.getElementById("fb-link");
 link.innerHTML = "MySpace is back in a really buig way";
+
 window.onload = pageLoad;
