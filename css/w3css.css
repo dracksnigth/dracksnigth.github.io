@@ -1,6 +1,10 @@
 /* W3.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+.social{top: 75%;
+    width: 5%;
+    position: fixed;
+    z-index: 13;}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
@@ -227,7 +231,3 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif !important}
 @media only screen and (max-width: 600px) {#main {margin-left: 0 !important}}
 
 
-.social{top: 75%;
-    width: 5%;
-    position: fixed;
-    z-index: 13;}
