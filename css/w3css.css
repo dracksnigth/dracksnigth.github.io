@@ -5,7 +5,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     width: 5%;
     position: fixed;
     z-index: 13;}
-.social ul{list-style: none}    
+.social ul{list-style: none;}    
 
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
