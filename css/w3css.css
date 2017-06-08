@@ -1,7 +1,7 @@
 /* W3.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-.social{top: 75%;
+.social{top: 63%;
     width: 5%;
     position: fixed;
     z-index: 13;}
